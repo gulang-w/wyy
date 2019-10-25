@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <style>
+        #txt-input,#txt-ouput{
+            height: 60px;
+        }
+    </style>
+    <script type="text/javascript">
+        // var score=90;
+        // if (score<60)
+        // {
+        //     alert("zhenshi")
+        // }
+        // else
+        // {
+        //     document.write("<strong style='color: red'>zhendema</strong>")
+        // }
+
+        // var d = new Date();
+        // var time = d.getHours();
+        // if(time<12)
+        // {
+        //     document.write("早上好");
+        // }
+        // else if(time>12 && time<18)
+        // {
+        //     document.write("中午好");
+        // }
+        // else
+        // {
+        //     document.write("晚上好");
+        // }
+
+        // var now = new Date();
+        // var day = now.getDay();
+        // var week;
+        // switch(day)
+        // {
+        //     case 1:
+        //         week = "星期一"; break;
+        //     case 2:
+        //         week = "星期二"; break;
+        //     case 3:
+        //         week = "星期三"; break;
+        //     case 4:
+        //         week = "星期四"; break;
+        //     case 5:
+        //         week = "星期五"; break;
+        //     case 6:
+        //         week = "星期六"; break;
+        //     default:
+        //         week = "星期日"; 
+        // }
+        // document.write("今天是" + week);
+
+        // var n = 1;
+        // var sum = 0;
+        // while (n<=100)
+        // {
+        //     sum+=n;
+        //     n++;
+        // }
+        // document.write(sum);
+
+
+        // var n = 1;
+        // var sum = 0;
+        // do
+        // {
+        //     sum+=n;
+        //     n++;
+        // }
+        // while(n<=100);
+        // document.write(sum);
+
+
+        // for(var i = 0; i<=5; i++)
+        // {
+        //     document.write(i)
+        // }
+
+        // var ai = 5;
+        // var i = 0;
+        // while(i<=ai){
+        //     document.write(i);
+        //     i++
+        // }
+
+
+        // console.log(0.1.toString(2))
+
+
+        // var ao ="";
+        // var num = parseInt("156",16)
+        // console.log(num)
+
+
+        var count = 10;
+        for(var i = 0; i <count; i++){
+            document.write(i);
+        }
+            document.write(i+2+"<br/>");
+
+
+        for (var propName in window) {
+            document.write(propName+"<br/>");   
+        }
+        // var i = 3;
+        // while (i != 4) 
+        // {
+        //     document.write(i + "<br/>");
+        //     i++;
+        // }
+
+        // var n=5;
+        // var sum=0;
+        // for(var i=0; i<100; i++)
+        // {
+        //     if(i==(n+1))break;
+        //     sum+=i;
+        // }
+        // document.write(sum);
+
+
+        // var str = "i love javascript";
+        // for(var i=0; i<str.length; i++)
+        // {
+        //     if(str.charAt(i)>="o")
+        //     {
+        //         continue;
+        //     }
+        //     document.write(str.charAt(i));
+        // }
+
+
+        // var sum=0;
+        // for(var i=1; i<100; i+=2)
+        // {
+        //     sum+=i;
+        // }
+        // document.write(sum);
+
+        // document.write("水仙花数有：");
+        // for(i=100; i<1000; i++)
+        // {
+        //     var a=i%10;
+        //     var b=(i/10)%10;
+        //     b=parseInt(b);
+        //     var c=i/100;
+        //     c=parseInt(c);
+        //     if(i==(a*a*a+b*b*b+c*c*c))
+        //     {
+        //         document.write(i+",");
+        //     }
+        // }
+
+        // var str = "how are you doing";
+        // var result = "";
+        // for(var i=0; i<str.length; i++)
+        // {
+        //     if(str.charAt(i)<"s")
+        //     {
+        //         result+=str.charAt(i)+",";
+        //     }
+        // }
+        // document.write(result);
+
+        // function sum(n)
+        // {
+        //     var m=0;
+        //     for(var i=1; i<n; i+=2)
+        //     {
+        //         m+=i;
+        //     }
+        //     document.write(n+"以内的奇数和为"+m+"<br/>")
+        // }
+        // sum(50);
+
+
+        // var myFunction=function()
+        // {
+        //     document.write("zheshiwode");   
+        // }
+        // myFunction();
+
+        // function sum(a,b)
+        // {
+        //     var m=a+b;
+        //     return m;
+        // }
+        // var a=sum(2,3);
+        // document.write(a);
+
+        // function alertSum()
+        // {
+        //     var sum=0;
+        //     for(i=0; i<=10; i++)
+        //     {
+        //         sum+=i;
+        //     }
+        // alert(sum);
+        // }
+        // alertSum();
+
+
+        // function isLeapYear(year)
+        // {
+        //     if((year%4==0)&&(year%100!=0)||(year%400==0))
+        //     {
+        //         return year+"年是闰年";
+        //     }
+        //     else
+        //     {
+        //         return year+"年不是闰年";
+        //     }
+        // }
+        // document.write(isLeapYear(2020));
+
+        function alertMes()
+        {
+            alert("zhelishihaode");
+            // document.write("zhshi")
+        }
+
+
+        function mes()
+        {
+            alert("她：我爱heidji。\n我：oh~~my,= =?!");
+        }
+
+
+        // function fun(a)
+        // {
+        //     function multi(x)
+        //     {
+        //         return x*x;
+        //     }
+        //     var m=1;
+        //     for(i=1; i<=multi(a);i++)
+        //     {
+        //         m=m*i;
+        //     }
+        //     return m;
+        // }
+        // var sum = fun(2)+fun(3);
+        // document.write(sum);
+
+
+        var msg="\n函数的递归调用：\n\n";
+        function Test()
+        {
+            var result;
+            msg+="调用语句: \n";
+            msg+="  result=sum(20); \n";
+            msg+="调用步骤: \n";
+            result=sum(20);
+            msg+="计算结果: \n";
+            msg+="  result="+result+" \n";
+            alert(msg);
+        }
+        function sum(m)
+        {
+            if(m==0)
+            {
+                return 0;
+            }
+            else
+            {
+                msg+="   result="+m+"+sum("+(m-2)+ ");\n";
+                result = m+sum(m-2);
+            }
+            return result;
+        }
+
+
+
+        eval("document.write('<strong>asjdlla</strong>')");
+        eval("a=10;b=12;document.write(a*b)");
+        eval("x=10;y=20;document.write(x*y)");
+
+
+        document.write("isFinite(123)的返回值是：");
+        document.write(isFinite(123)+"<br/>");
+        document.write("zhenshide的返回值是：");
+        document.write(isFinite("zhenshide")+"<br/>");
+       
+
+        document.write("isNaN(123)的执行结果是：");
+        document.write(isNaN(123)+"<br/>");
+        document.write("isNaN(我的)的执行结果是：");
+        document.write(isNaN('我的')+"<br/>");
+
+
+        document.write(escape("hello word!")+"<br/>");
+        document.write(unescape("hello%20word%21")+"<br/>");
+
+
+        //定义加密函数
+        function encrypt()
+        {
+            var str = document.getElementById("txt-input").value;
+            //将输入框的值加密，并赋给输出框
+            document.getElementById("txt-ouput").value = escape(str);
+
+        }
+        //定义解密函数
+        function decrypt()
+        {
+            //获取输入框的值
+            var str = document.getElementById("txt-input").value;
+            //将输入框的值加密，并赋给输出框
+            document.getElementById("txt-ouput").value = unescape(str);
+        }
+       
+
+
+        var str1="i love javascript"
+        document.write("字符串长度是："+str1.length+"<br/>");
+
+        var str2="hello world";
+        document.write(str2.match("World")+"<br/>");
+        document.write(str2.match("world")+"<br/>");
+        document.write(str2.match("Wrorld")+"<br/>");
+        document.write(str2.match("Woreld")+"<br/>");
+
+        var str1="i love javascript"
+        document.write(str1.search("love")+"<br/>");
+        document.write(str1.search("html")+"<br/>");
+
+
+        var str="Hello World!";
+        document.write(str. indexOf ("world")+"<br/>");
+        document.write(str. indexOf ("World")+"<br/>");
+        document.write(str. indexOf ("worlld")+"<br/>");
+        document.write(str. indexOf ("world!")+"<br/>");
+
+        var str = "i love javescript";
+        var str_new=str.replace("love","ai");
+        document.write(str_new+"<br/>");
+        document.write(str.charAt(3)+"<br/>");
+
+
+
+        var um1 = 2;
+        var um2 = 20;
+        var um7 = um1 + um2;
+        var um3 = --um1 + um2;
+        var um4 = um1 + um2;
+        var um5 = um1++ +um2;
+        var um6 = um1 + um2;
+        var um8 = true;
+        var um9 = "12";
+        console.log(um9++);
+        console.log(--um8)
+        console.log(um3);
+        console.log(um4);
+        console.log(um5);
+        console.log(um6);
+        console.log(um7);
+
+
+        var q = we * 12;
+        console.log(q);
+
+
+        var we = 66 / 11;
+        console.log(we);
+
+        var r = 2 / 0;
+        console.log(r);
+
+        var y = 26 % 5;
+        console.log(y);
+        var i = 5 % Infinity;
+        console.log(i);
+
+
+        var o = +12 + -12;
+        console.log(o);
+
+
+        var p = "er" > "yu";
+        console.log(p);
+
+        var conn = 10;
+        for(i=0;i<conn;i++)
+        {
+            console.log(i)
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="提交" onclick="alertMes()">
+    <a href="javascript:mes()">表白对话</a>
+    <input type="button" value="测试" onclick="Test()"/>
+    <form>
+        <textarea id="txt-input" cols="20"></textarea><br>
+        <input id="btn-encrypt" type="button" value="加密" onclick="encrypt()"/>
+        <input id="btn-decrypt" type="button" value="解密" onclick="decrypt()"/>
+        <input id="Reset1" type="reset" value="清空"/><br/>
+        <textarea id="txt-ouput" cols="20"></textarea>
+    </form>
+</body>
+
+</html>
