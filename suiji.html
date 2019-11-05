@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            margin-top: 10px;
+        }
+    </style>
+<body>
+    <button id="btn" onclick="se">换色</button>
+    <div id="box"></div>
+    <script type="text/javascript">
+        function sel(lower, uper) {
+            var cho = uper - lower + 1;
+            return Math.floor(Math.random() * cho + lower);
+        }
+        var colors = ["red", "green", "blue", "yellow", "black", "brown"]
+        var color = colors[sel(0, colors.length - 1)]
+        // document.write(color);
+ box.style.background = color;
+
+        // var box = document.getElementById('box');
+        // var btn = document.getElementById('btn');
+        // btn.onclick = function se() {
+               
+        // }
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        #box{
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background: blue;
+        }
+        .name{
+            width: 100px;
+            display: block;
+            padding: 10px 0;
+            margin: 10px 20px;
+            text-align: center;
+            border: 1px solid #333;
+            background: orange;
+            float: left;
+        }
+        #btn{
+            display: block;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            position: absolute;
+            top: calc(50% - 40px);
+            left: calc(50% - 20px)
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <input type="button" id="btn" value="点名">
+    </div>
+    <script type="text/javascript">
+        var names = ["12","34","56","67","98","12","34","56","67","98","12","34","56","67","98"];
+        var box = document.getElementById('box');
+        for(var i = 0; i<names.length; i++) {
+            // console.log(names[i])
+            //createElement() 方法通过指定名称创建一个元素
+            var childrenNode = document.createElement("span");
+            // console.log(childrenNode)
+            childrenNode.innerHTML = names[i];
+            childrenNode.className = "name";
+            //appendChild() 方法可向节点的子节点列表的末尾添加新的子节点。
+            box.appendChild(childrenNode)//把元素添加到box的尾部
+            // console.log(childrenNode);
+        }
+        var time = null;
+        var randoms = 0;
+        var spans = document.getElementsByClassName("name");
+        var btn = document.getElementById('btn');
+        btn.onclick = function() {
+            if(this.value == "点名") {
+                this.value = "停止";
+               time = setInterval(function() {
+                   for(var i = 0; i<spans.length; i++) {
+                       spans[i].style.background = "";
+                   }
+                    randoms = parseInt(Math.random()  * names.length);
+                    // console.log(randoms)
+                    spans[randoms].style.background = "red"
+                },20)
+            } else {
+                this.value = "点名"
+                clearInterval(time);
+            }
+        }
+    </script>
+</body>
+</html>

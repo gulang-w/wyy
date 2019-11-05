@@ -4,7 +4,8 @@
 <head>
     <title></title>
     <style>
-        #txt-input,#txt-ouput{
+        #txt-input,
+        #txt-ouput {
             height: 60px;
         }
     </style>
@@ -99,14 +100,14 @@
 
 
         var count = 10;
-        for(var i = 0; i <count; i++){
+        for (var i = 0; i < count; i++) {
             document.write(i);
         }
-            document.write(i+2+"<br/>");
+        document.write(i + 2 + "<br/>");
 
 
         for (var propName in window) {
-            document.write(propName+"<br/>");   
+            document.write(propName + "<br/>");
         }
         // var i = 3;
         // while (i != 4) 
@@ -219,15 +220,13 @@
         // }
         // document.write(isLeapYear(2020));
 
-        function alertMes()
-        {
+        function alertMes() {
             alert("zhelishihaode");
             // document.write("zhshi")
         }
 
 
-        function mes()
-        {
+        function mes() {
             alert("她：我爱heidji。\n我：oh~~my,= =?!");
         }
 
@@ -249,28 +248,24 @@
         // document.write(sum);
 
 
-        var msg="\n函数的递归调用：\n\n";
-        function Test()
-        {
+        var msg = "\n函数的递归调用：\n\n";
+        function Test() {
             var result;
-            msg+="调用语句: \n";
-            msg+="  result=sum(20); \n";
-            msg+="调用步骤: \n";
-            result=sum(20);
-            msg+="计算结果: \n";
-            msg+="  result="+result+" \n";
+            msg += "调用语句: \n";
+            msg += "  result=sum(20); \n";
+            msg += "调用步骤: \n";
+            result = sum(20);
+            msg += "计算结果: \n";
+            msg += "  result=" + result + " \n";
             alert(msg);
         }
-        function sum(m)
-        {
-            if(m==0)
-            {
+        function sum(m) {
+            if (m == 0) {
                 return 0;
             }
-            else
-            {
-                msg+="   result="+m+"+sum("+(m-2)+ ");\n";
-                result = m+sum(m-2);
+            else {
+                msg += "   result=" + m + "+sum(" + (m - 2) + ");\n";
+                result = m + sum(m - 2);
             }
             return result;
         }
@@ -283,64 +278,62 @@
 
 
         document.write("isFinite(123)的返回值是：");
-        document.write(isFinite(123)+"<br/>");
+        document.write(isFinite(123) + "<br/>");
         document.write("zhenshide的返回值是：");
-        document.write(isFinite("zhenshide")+"<br/>");
-       
+        document.write(isFinite("zhenshide") + "<br/>");
+
 
         document.write("isNaN(123)的执行结果是：");
-        document.write(isNaN(123)+"<br/>");
+        document.write(isNaN(123) + "<br/>");
         document.write("isNaN(我的)的执行结果是：");
-        document.write(isNaN('我的')+"<br/>");
+        document.write(isNaN('我的') + "<br/>");
 
 
-        document.write(escape("hello word!")+"<br/>");
-        document.write(unescape("hello%20word%21")+"<br/>");
+        document.write(escape("hello word!") + "<br/>");
+        document.write(unescape("hello%20word%21") + "<br/>");
 
 
         //定义加密函数
-        function encrypt()
-        {
+        function encrypt() {
             var str = document.getElementById("txt-input").value;
             //将输入框的值加密，并赋给输出框
             document.getElementById("txt-ouput").value = escape(str);
 
         }
         //定义解密函数
-        function decrypt()
-        {
+        function decrypt() {
             //获取输入框的值
             var str = document.getElementById("txt-input").value;
             //将输入框的值加密，并赋给输出框
             document.getElementById("txt-ouput").value = unescape(str);
         }
-       
 
 
-        var str1="i love javascript"
-        document.write("字符串长度是："+str1.length+"<br/>");
 
-        var str2="hello world";
-        document.write(str2.match("World")+"<br/>");
-        document.write(str2.match("world")+"<br/>");
-        document.write(str2.match("Wrorld")+"<br/>");
-        document.write(str2.match("Woreld")+"<br/>");
+        var str1 = "i love javascript"
+        document.write("字符串长度是：" + str1.length + "<br/>");
 
-        var str1="i love javascript"
-        document.write(str1.search("love")+"<br/>");
-        document.write(str1.search("html")+"<br/>");
+        var str2 = "hello world";
+        document.write(str2.match("World") + "<br/>");
+        document.write(str2.match("world") + "<br/>");
+        document.write(str2.match("Wrorld") + "<br/>");
+        document.write(str2.match("Woreld") + "<br/>");
+
+        var str1 = "i love javascript"
+        document.write(str1.search("love") + "<br/>");
+        document.write(str1.search("html") + "<br/>");
 
 
-        var str="Hello World!";
-        document.write(str. indexOf ("world")+"<br/>");
-        document.write(str. indexOf ("World")+"<br/>");
-        document.write(str. indexOf ("worlld")+"<br/>");
-        document.write(str. indexOf ("world!")+"<br/>");
+        var str = "Hello World!";
+        document.write(str.indexOf("world") + "<br/>");
+        document.write(str.indexOf("World") + "<br/>");
+        document.write(str.indexOf("worlld") + "<br/>");
+        document.write(str.indexOf("world!") + "<br/>");
 
         var str = "i love javescript";
-        var str_new=str.replace("love","ai");
-        document.write(str_new+"<br/>");
-        document.write(str.charAt(3)+"<br/>");
+        var str_new = str.replace("love", "ai");
+        document.write(str_new + "<br/>");
+        document.write(str.charAt(3) + "<br/>");
 
 
 
@@ -349,7 +342,7 @@
         var um7 = um1 + um2;
         var um3 = --um1 + um2;
         var um4 = um1 + um2;
-        var um5 = um1++ +um2;
+        var um5 = um1++ + um2;
         var um6 = um1 + um2;
         var um8 = true;
         var um9 = "12";
@@ -386,38 +379,214 @@
         console.log(p);
 
         var conn = 10;
-        for(i=0;i<conn;i++)
-        {
+        for (i = 0; i < conn; i++) {
             console.log(i)
-        } 
+        }
 
 
         var now = new Date();
-        document.write(now+"</br>");
+        document.write(now + "</br>");
 
 
         var nows = new Date(Date.parse("May 25, 2004"));
-        document.write(nows+"</br>");
+        document.write(nows + "</br>");
 
 
-        var yk = new Date(Date.UTC(2000,0))
-        document.write(yk+"</br>");
+        var yk = new Date(Date.UTC(2000, 0))
+        document.write(yk + "</br>");
 
 
-        var yk = new Date(2000,0);
-        document.write(yk+"</br>");
+        var yk = new Date(2000, 0);
+        document.write(yk + "</br>");
+
+
+
+        var obj = {
+            "name": "小杰",
+            "age": 23,
+            "gender": "男",
+            hobby: {
+                "frist": "singing",
+                "second": "dancing"
+            }
+        }
+        // obj.name = "小明";
+        // console.log("姓名是：" + obj.name)
+
+        for (var c in obj) {
+            if (c == "name") {
+                console.log('名字是：' + obj[c]);
+            }
+        }
+
+
+
+        var arr = [
+            {
+                "name": "小杰",
+                "age": 23,
+                "gender": "男",
+            },
+            {
+                "frist": "singing",
+                "second": "dancing"
+            }
+        ]
+        arr[1].name = "小红";
+        console.log(arr[1].name);
+        // delete arr[0];
+        // console.log(arr[0].name);
+
+
+
+        var ing = '{"name": "helicopter", "age":23, "gender": "男"}';
+        var jg = JSON.parse(ing);
+        console.log(jg);
+        console.log("姓名是：" + jg.name);
+
+
+        var str = "12345637463555344";
+        var arre = [];
+        var pos = str.indexOf(5);
+        while (pos > -1) {
+            arre.push(pos);
+            pos = str.indexOf(5, pos + 1)
+        }
+        console.log(arre);
+
+
+
+        var person = {
+            name: "mack",
+            age: 23
+        }
+        console.log(Object.getOwnPropertyDescriptor(person, "name"));
+        //Object.getOwnPropertyDescripto()方法可以获取指定属性的描述，也就是属性值
+        Object.defineProperty(person, "age", {
+            // writable: true,
+            writable: false,   //设置age的值是只读的，是不能被修改的
+            value: 45
+        })
+        person.age = 55;
+        console.log(Object.getOwnPropertyDescriptor(person, "age"));
+        person.call = 2345;
+        console.log(Object.getOwnPropertyDescriptor(person, "call"));
+
+
+        var str = "你hao";
+        function by(str) {
+            var co = str.length;
+            for (var i = 0; i < str.length; i++) {
+
+                if (str.charCodeAt(i) > 255) {
+                    co++
+                }
+                return co;
+            }
+        }
+
+        Person.prototype.LastName = "Wang";
+        function Person(name, age, sex) {
+            // this.LastName = "ji";
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
+        var person = new Person("xiaoming", 30, "mal");
+        var person1 = new Person();
+
+
+
+        // function time(a,b,c) {
+        //   var tb = new Object;
+        //     tb.a = a;
+        //     tb.b = b;
+        //     tb.c = c;
+        //     return a*b*c;
+        // }
+        // var m = time(1,2,3);
+        // console.log(m);
+
+        // var t = function() {
+
+        //     return {
+        //       run : function() {
+        //             var sum = 1;
+        //             if(arguments.length>0) {
+        //                 for(var j = 1; j<arguments.length; j++) {
+        //                     sum = sum*arguments[j];
+        //                 }
+        //             }
+        //             return sum
+        //         }
+        //     }
+        // }
+        // var sum = t();
+        // console.log(sum.run(1,2,3));
+
+
+        // function m() {
+        //     var sum = 0;
+        //     for(var i = 0; i<arguments.length; i++) {
+        //         sum += arguments[i];
+        //     }
+        //     return sum;
+        // }
+        // console.log(m(1,2,3,4,5));
+
+
+        // function box8() {
+        //     var obj = new Object();
+        //     obj.run = function() {
+        //         var sum = 0;
+        //         for(var i = 0; i<arguments.length; i++) {
+        //             var value = arguments[i]
+        //             sum = sum + value;
+        //         }
+        //         return sum
+        //     }
+        //     return obj
+        // }
+        // var args = box8();
+        // console.log(args.run(1,2,3));
+
+
+
+
+        function Son() {
+            this.run = function () {
+                var sum = 0;
+                for (var i = 0; i < arguments.length; i++) {
+                    sum += arguments[i]
+                }
+                return sum;
+            }
+        }
+        var son = new Son();
+        console.log(son.run(1,2,3,4,5));
+
+
+        var obj = {name : "a"};
+        var obj2 = obj;
+        obj =  {name : "b"};
+        alert(obj2.name);
+
+        var obj = {name:"a"};
+        var obj2 = obj;
+        obj.name = "b";
+        alert(obj2.name)
     </script>
 </head>
 
 <body>
     <input type="button" value="提交" onclick="alertMes()">
     <a href="javascript:mes()">表白对话</a>
-    <input type="button" value="测试" onclick="Test()"/>
+    <input type="button" value="测试" onclick="Test()" />
     <form>
         <textarea id="txt-input" cols="20"></textarea><br>
-        <input id="btn-encrypt" type="button" value="加密" onclick="encrypt()"/>
-        <input id="btn-decrypt" type="button" value="解密" onclick="decrypt()"/>
-        <input id="Reset1" type="reset" value="清空"/><br/>
+        <input id="btn-encrypt" type="button" value="加密" onclick="encrypt()" />
+        <input id="btn-decrypt" type="button" value="解密" onclick="decrypt()" />
+        <input id="Reset1" type="reset" value="清空" /><br />
         <textarea id="txt-ouput" cols="20"></textarea>
     </form>
 </body>
