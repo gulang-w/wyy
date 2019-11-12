@@ -5,8 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="rem.js"></script>
+    <style>
+        .user-all{
+            width: 18.4375rem;
+            margin: 1.25rem auto;
+            position: relative;
+        }
+        .user,.password{
+            display: block;
+            width: 18.4375rem;
+            height: 3.125rem;
+            border-radius: 3.125rem;
+            border: .0625rem solid #e3e3e3;
+            outline: none;
+            font-size: 1.6rem;
+            text-indent: 3em;
+            margin-top: .625rem;
+        }
+        .sign-in{
+            width: 18.4375rem;
+            height: 3.125rem;
+            display: block;
+            margin: 0 auto;
+            border: none;
+            border-radius: 3.125rem;
+            background: #85b2f6;
+            outline: none;
+            font-size: 1rem;
+            color: white;
+        }
+        .footer{
+            display: block;
+            width: 17%;
+            height: .6875rem;
+            font-size: .5rem;
+            margin: .625rem auto;
+            color: #999999;
+        }
+        .user-img{
+            position: absolute;
+            top: 1.09375rem;
+            left: 1.5625rem;
+        }
+        .password-img{
+            position: absolute;
+            top: 5rem;
+            left: 1.5625rem;
+        }
+        .sign2{
+            display: none;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .top{
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        .top img{
+            width: 100%;
+        }
+        .left,.right{
+            width: 50%;
+            text-align: center;
+            font-size: 1.3rem;
+            position: absolute;
+            bottom: 2rem;
+            
+        }
+        .left{
+            left: 0;
+            color: #f3f3f3;
+        }
+        .right{
+            right: 0;
+            border-left: 2px solid #8c8885;
+            color: #8c8885;
+        }
+        .san{
+            width: 0;
+            height: 0;
+            border-left: .735rem solid transparent;
+            border-right: .735rem solid transparent;
+            border-bottom: .65rem solid #fff;
+            position: absolute;
+            bottom: 0.6%;
+            left: 23%;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var top = document.getElementById('top');
+            var left = document.getElementById('left');
+            var right =  document.getElementById('right');
+            var san = document.getElementById('san');
+            var sign1 = document.getElementById('sign1');
+            var sign2 = document.getElementById('sign2');
+            right.onclick = function() {
+                sign1.style.display = "none";
+                sign2.style.display = "block";
+                right.style.color = "#fff";
+                left.style.color = "#8c8885";
+                san.style.left = '70%'
+            }
+            left.onclick = function() {
+                sign1.style.display = "block";
+                sign2.style.display = "none";
+                right.style.color = "#8c8885";
+                left.style.color = "#fff";
+                san.style.left = '23%'
+            }
+            
+        }
+    </script>
 </head>
 <body>
-    <div class="banner"></div>
+    <header class="top" id="top">
+            <img src="./images/banner.png" alt="">
+            <p class="left" id="left">Sign In</p>
+            <p class="right" id="right">Sign Up</p>
+            <div class="san" id="san"></div>
+    </header>
+    <div class="sign1" id="sign1">
+    <div class="user-all">
+    <input type="text" class="user">
+    <img src="./images/Sign-In_06.png" alt="" class="user-img">
+    <input type="password" class="password">
+    <img src="./images/Sign-In_09.png" alt="" class="password-img">
+    </div>
+    <button class="sign-in">SIGN IN</button>
+    <a href="#" class="footer">ForGot Password</a>
+    </div>
+    <div class="sign2" id="sign2">
+            <div class="user-all">
+            <input type="text" class="user" placeholder="用户名/邮箱">
+            <img src="./images/Sign-In_06.png" alt="" class="user-img">
+            <input type="password" class="password" placeholder="密码">
+            <img src="./images/Sign-In_09.png" alt="" class="password-img">
+            </div>
+            <button class="sign-in">SIGN IN</button>
+            <a href="#" class="footer">ForGot Password</a>
+            </div>      
 </body>
 </html>
